@@ -1,0 +1,14 @@
+{
+  "name": "@kafka-tutorials/collection-builder",
+  "version": "0.0.0",
+  "private": true,
+  "module": "index.js",
+  "typings": "./index.d.ts",
+  "scripts": {
+    "build": "tsc --declaration",
+    "test": "mocha --require=ts-node/register -w --extension ts"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {    
+  }
+}

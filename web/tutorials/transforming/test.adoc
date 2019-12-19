@@ -1,0 +1,25 @@
+---
+permalink: /transform-a-stream-of-events/test2.html
+layout: tutorial2
+tags:
+    - concept/event
+    - concept/transform
+    - prereq/docker-compose
+---
+= My tutorial
+
+== Try it
+
+=== Set up
+
+First create a directory for your tutorial.
+
+[source, sh]
+----
+mkdir foo && cd foo
+----
+
+== Test it
+
+
+== Launch to production

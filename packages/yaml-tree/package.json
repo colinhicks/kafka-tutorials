@@ -1,0 +1,24 @@
+{
+  "name": "@kafka-tutorials/yaml-tree",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "build": "tsc --declaration",
+    "test": "TS_NODE_PROJECT=test/tsconfig.json mocha --require=ts-node/register --extension ts",
+    "clean": "rm *.js *.d.ts build/*"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@kafka-tutorials/asciidoc-parser": "^0.0.0",
+    "globby": "^10.0.1",
+    "js-yaml": "^3.13.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.3",
+    "@types/js-yaml": "^3.12.1",
+    "@types/mocha": "^5.2.7",
+    "mocha": "^6.2.0"
+  }
+}

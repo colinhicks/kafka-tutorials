@@ -1,0 +1,13 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../build",
+    "noImplicitThis": false,
+    "typeRoots": ["../node_modules/@types", "../../../node_modules/@types", "../typings"]
+  },
+  "include": [
+    "./**/*.ts",
+    "../src/**/*.ts",
+    "../typings/**/*.ts"
+  ]
+}

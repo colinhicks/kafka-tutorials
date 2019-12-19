@@ -1,0 +1,21 @@
+{
+  "name": "@kafka-tutorials/web",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "site:build": "npx @11ty/eleventy",
+    "site:dev": "npx @11ty/eleventy --serve",
+    "styles:build": "sass assets/sass/main.scss assets/sass/main.css -I node_modules",
+    "styles:watch": "npm run styles:build && npm run styles:build -- --watch"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@kafka-tutorials/asciidoc-parser": "^0.0.0",
+    "@kafka-tutorials/yaml-tree": "^0.0.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0",
+    "bulma": "0.7.4",
+    "sass": "^1.23.0"
+  }
+}

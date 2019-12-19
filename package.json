@@ -1,26 +1,37 @@
 {
   "name": "kafka-tutorials",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
   "private": true,
-  "scripts": {
-    "parser:watch-test": "TS_NODE_PROJECT=parser/test/tsconfig.json mocha --require=ts-node/register ./parser/test/ -w --extension ts,adoc"
+  "scripts": {    
+    "bootstrap": "lerna bootstrap --hoist",
+    "parser:watch-test": "TS_NODE_PROJECT=parser/test/tsconfig.json mocha --require=ts-node/register ./parser/test/ -w --extension ts,adoc",
+    "site:build": "npx @11ty/eleventy",
+    "site:dev": "npx @11ty/eleventy --serve",
+    "site:test": "mocha ./test/site -w",
+    "styles:build": "sass assets/sass/main.scss assets/sass/main.css -I node_modules",
+    "styles:watch": "npm run styles:build && npm run styles:build -- --watch"
   },
   "keywords": [],
   "author": "",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "dependencies": {
     "bulma": "0.7.4"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^0.9.0",
     "@asciidoctor/core": "^2.0.3",
     "@types/chai": "^4.2.3",
     "@types/mocha": "^5.2.7",
     "@types/node": "^12.7.8",
     "chai": "^4.2.0",
+    "globby": "^10.0.1",
+    "js-yaml": "^3.13.1",
+    "lerna": "^3.18.3",
     "mocha": "^6.2.0",
     "rimraf": "^3.0.0",
+    "sass": "^1.23.0",
     "ts-node": "^8.4.1",
-    "typescript": "^3.6.3"
+    "typescript": "^3.7.0-beta"
   }
 }

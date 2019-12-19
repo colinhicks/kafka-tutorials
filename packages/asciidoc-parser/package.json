@@ -1,0 +1,20 @@
+{
+  "name": "@kafka-tutorials/asciidoc-parser",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "typings": "./index.d.ts",
+  "scripts": {
+    "build": "tsc --declaration",
+    "test": "TS_NODE_PROJECT=test/tsconfig.json mocha --require=ts-node/register --extension ts"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@asciidoctor/core": "^2.0.3",
+    "gray-matter": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "mocha": "^6.2.2"
+  }
+}
